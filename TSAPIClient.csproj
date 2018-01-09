@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B3BCB97-D179-41C3-A04C-386333DA32E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TSAPIClient</RootNamespace>
+    <AssemblyName>TSAPIClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net40\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATT\Constants.cs" />
+    <Compile Include="ATT\Enums.cs" />
+    <Compile Include="ATT\Events.cs" />
+    <Compile Include="ATT\Proxy.cs" />
+    <Compile Include="ATT\Structs.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="CSTA\Constants.cs" />
+    <Compile Include="CSTA\Enums.cs" />
+    <Compile Include="CSTA\Events.cs" />
+    <Compile Include="CSTA\Proxy.cs" />
+    <Compile Include="CSTA\Structs.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="Parsers\ACS\CONFIRMATION\ACSCloseStreamConfParser.cs" />
+    <Compile Include="Parsers\ACS\CONFIRMATION\ACSConfirmationParserFactory.cs" />
+    <Compile Include="Parsers\ACS\CONFIRMATION\ACSOpenStreamConfParser.cs" />
+    <Compile Include="Parsers\ACS\CONFIRMATION\ACSSetHeartbeatIntervalConfParser.cs" />
+    <Compile Include="Parsers\ACS\CONFIRMATION\ACSUniversalFailureConfParser.cs" />
+    <Compile Include="Parsers\ACS\CONFIRMATION\IACSConfirmationParser.cs" />
+    <Compile Include="Parsers\ACS\CONFIRMATION\IACSConfirmationParserFactory.cs" />
+    <Compile Include="Parsers\ACS\UNSOLICITED\ACSUniversalFailureParser.cs" />
+    <Compile Include="Parsers\ACS\UNSOLICITED\ACSUnsolicitedParserFactory.cs" />
+    <Compile Include="Parsers\ACS\UNSOLICITED\IACSUnsolicitedParser.cs" />
+    <Compile Include="Parsers\ACS\UNSOLICITED\IACSUnsolicitedParserFactory.cs" />
+    <Compile Include="Parsers\ATT\ATTCallClearedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTChargeAdviceParser.cs" />
+    <Compile Include="Parsers\ATT\ATTConferenceCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTConferencedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTConnectionClearedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTConsultationCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTDeliveredParser.cs" />
+    <Compile Include="Parsers\ATT\ATTDivertedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTEstablishedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTEventParserFactory.cs" />
+    <Compile Include="Parsers\ATT\ATTFailedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTHeldParser.cs" />
+    <Compile Include="Parsers\ATT\ATTLinkStatusParser.cs" />
+    <Compile Include="Parsers\ATT\ATTLoggedOffParser.cs" />
+    <Compile Include="Parsers\ATT\ATTLoggedOnParser.cs" />
+    <Compile Include="Parsers\ATT\ATTMakeCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTMakePredictiveCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTMonitorCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTMonitorConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTMonitorStopOnCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTNetworkReachedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTOriginatedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryAcdSplitConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryAgentLoginConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryAgentLoginRespParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryAgentStateConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryCallClassifierConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryDeviceInfoConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryDeviceNameConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryMwiConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryStationStatusConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryTgConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryTodConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueryUcidConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTQueuedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTRouteRequestParser.cs" />
+    <Compile Include="Parsers\ATT\ATTRouteUsedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTSendDTMFToneConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTServiceInitiatedParser.cs" />
+    <Compile Include="Parsers\ATT\ATTSetAgentStateConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTSingleStepConferenceCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTSingleStepTransferCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTSnapshotCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTSnapshotDeviceConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTTransferCallConfParser.cs" />
+    <Compile Include="Parsers\ATT\ATTTransferredParser.cs" />
+    <Compile Include="Parsers\ATT\IATTEventParser.cs" />
+    <Compile Include="Parsers\ATT\IATTEventParserFactory.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAAlternateCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAAnswerCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTACallCompletionConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAChangeMonitorFilterConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAChangeSysStatFilterConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAClearCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAConferenceCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAConfirmationParserFactory.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAConsultationCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTADeflectCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAEscapeSvcConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAGetAPICapsConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAGetDeviceListConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAGroupPickupCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAHoldCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAMakeCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAMakePredictiveCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAMonitorConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAMonitorStopConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAPickupCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAQueryAgentStateConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAQueryCallMonitorConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAQueryDeviceInfoConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAQueryDndConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAQueryFwdConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAQueryLastNumberConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAQueryMwiConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAReconnectCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTARetrieveCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTARouteRegisterCancelConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTARouteRegisterReqConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASetAgentStateConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASetDndConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASetFwdConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASetMwiConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASnapshotCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASnapshotDeviceConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASysStatReqConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASysStatStartConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTASysStatStopConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTATransferCallConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\CSTAUniversalFailureConfParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\ICSTAConfirmationParser.cs" />
+    <Compile Include="Parsers\CSTA\CONFIRMATION\ICSTAConfirmationParserFactory.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTABackInServiceParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTACallClearedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTACallInformationParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAConferencedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAConnectionClearedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTADeliveredParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTADivertedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTADoNotDisturbParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAEstablishedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAFailedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAForwardingParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAHeldParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTALoggedOffParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTALoggedOnParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAMessageWaitingParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAMonitorEndedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTANetworkReachedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTANotReadyParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAOriginatedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAOutOfServiceParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAPrivateStatusParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAQueuedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAReadyParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTARetrievedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAServiceInitiatedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTATransferredParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAUnsolicitedParserFactory.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAWorkNotReadyParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\CSTAWorkReadyParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\ICSTAUnsolicitedParser.cs" />
+    <Compile Include="Parsers\CSTA\UNSOLICITED\ICSTAUnsolicitedParserFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Readers\EventReader.cs" />
+    <Compile Include="Readers\PrivateDataReader.cs" />
+    <Compile Include="Readers\StructReader.cs" />
+    <Compile Include="Requests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
