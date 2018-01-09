@@ -1,0 +1,6 @@
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Debug\TSAPIClient.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Debug\TSAPIClient.pdb
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Debug\NLog.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Debug\NLog.xml
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\obj\Debug\TSAPIClient.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\obj\Debug\TSAPIClient.pdb

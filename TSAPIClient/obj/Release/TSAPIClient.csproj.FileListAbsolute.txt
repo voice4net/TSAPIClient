@@ -1,0 +1,7 @@
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Release\TSAPIClient.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Release\TSAPIClient.pdb
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Release\NLog.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\bin\Release\NLog.xml
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\obj\Release\TSAPIClient.csprojResolveAssemblyReference.cache
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\obj\Release\TSAPIClient.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClient\obj\Release\TSAPIClient.pdb
