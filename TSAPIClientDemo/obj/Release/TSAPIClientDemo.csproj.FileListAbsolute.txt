@@ -1,0 +1,13 @@
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Release\TSAPIClientDemo.exe.config
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Release\TSAPIClientDemo.exe
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Release\TSAPIClientDemo.pdb
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Release\NLog.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Release\TSAPIClient.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Release\TSAPIClient.pdb
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Release\NLog.xml
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Release\TSAPIClientDemo.csprojResolveAssemblyReference.cache
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Release\TSAPIClientDemo.FrmTSAPIClient.resources
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Release\TSAPIClientDemo.Properties.Resources.resources
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Release\TSAPIClientDemo.csproj.GenerateResource.Cache
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Release\TSAPIClientDemo.exe
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Release\TSAPIClientDemo.pdb

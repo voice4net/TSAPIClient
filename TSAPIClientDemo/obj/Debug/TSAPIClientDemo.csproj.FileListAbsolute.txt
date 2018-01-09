@@ -1,0 +1,13 @@
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Debug\TSAPIClientDemo.exe.config
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Debug\TSAPIClientDemo.exe
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Debug\TSAPIClientDemo.pdb
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Debug\TSAPIClient.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Debug\NLog.dll
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Debug\TSAPIClient.pdb
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\bin\Debug\NLog.xml
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Debug\TSAPIClientDemo.csprojResolveAssemblyReference.cache
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Debug\TSAPIClientDemo.FrmTSAPIClient.resources
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Debug\TSAPIClientDemo.Properties.Resources.resources
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Debug\TSAPIClientDemo.csproj.GenerateResource.Cache
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Debug\TSAPIClientDemo.exe
+c:\users\brad\documents\visual studio 2012\Projects\TSAPIClient\TSAPIClientDemo\obj\Debug\TSAPIClientDemo.pdb
